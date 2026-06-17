@@ -146,4 +146,12 @@ h1 {
   .team-b {
     font-size: 15px;
   }
+
+  .live-badge {
+    white-space: nowrap;
+  }
+
+  .match-teams {
+    gap: 0.5rem;
+  }
 }
