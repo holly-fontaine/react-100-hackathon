@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "sport": "soccer",
+    "A": "Chile",
+    "B": "Brazil",
+    "status": "live"
+  },
+  {
+    "id": 2,
+    "sport": "hockey",
+    "A": "jimmy",
+    "B": "lukas",
+    "status": "live"
+  }
+]
