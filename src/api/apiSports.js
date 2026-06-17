@@ -1,4 +1,5 @@
-const url = "/api/football/fixtures?live=all";
+const url =
+  "https://react-100-hackathon-production.up.railway.app/api/football";
 
 export async function fetchLiveMatches() {
   const results = [];

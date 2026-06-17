@@ -5,6 +5,18 @@ import cors from "cors";
 const app = express();
 app.use(cors());
 app.use(express.json());
+app.get("/api/football", async (req, res) => {
+  const response = await fetch(
+    "https://v3.football.api-sports.io/fixtures?live=all",
+    {
+      headers: {
+        "x-apisports-key": process.env.API_SPORTS_KEY,
+      },
+    },
+  );
+  const data = await response.json();
+  res.json(data);
+});
 
 app.post("/api/claude", async (req, res) => {
   const response = await fetch("https://api.anthropic.com/v1/messages", {
@@ -22,4 +34,4 @@ app.post("/api/claude", async (req, res) => {
 });
 
 const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => console.log("Proxy running on port ${PORT}"));
+app.listen(PORT, () => console.log(`Proxy running on port ${PORT}`));
