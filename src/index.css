@@ -130,3 +130,20 @@ h1 {
   font-style: italic;
   line-height: 1.6;
 }
+
+@media (max-width: 768px) {
+  .match-list {
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 48px;
+  }
+  .score {
+    font-size: 22px;
+  }
+
+  .team-a,
+  .team-b {
+    font-size: 15px;
+  }
+}
